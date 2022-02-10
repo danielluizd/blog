@@ -222,3 +222,14 @@ nav {
   background: #fff;
   margin: 8px;
 }
+
+.footer {
+  display: flex;
+  margin-top: 8rem;
+  background: #241e35;
+  width: 100vw;
+  height: 8vw;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
