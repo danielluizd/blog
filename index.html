@@ -54,41 +54,97 @@
 
       <div id="articles" class="article box1">
         <h1 class="title">Articles</h1>
-        <ul>
-          <li class="list-1"><img src="/assets/1.jpg" alt="">
-            <div class="main">
-              <div class="user.title">
-                <h1>Title</h1>
-              </div>
-              <div class="details">
-                <img src="/assets/profile.jpg" alt="">
-                <div class="detailsDate">
-                  <p class="user">Daniel Luiz Dourados</p>
-                  <p class="user">Xx/XX/XXXX</p>
+
+        <div class="carousel">
+          <ul>
+            <div data-js="carousel__item" class="carousel__item carousel__item--visible">
+              <!-- <img src="./img/1.jpg" /> -->
+              <li class="list-1"><img src="/assets/1.jpg" alt="">
+                <div class="main">
+                  <div class="user.title">
+                    <h1>Title</h1>
+                  </div>
+                  <div class="details">
+                    <img src="/assets/profile.jpg" alt="">
+                    <div class="detailsDate">
+                      <p class="user">Daniel Luiz Dourados</p>
+                      <p class="user">Xx/XX/XXXX</p>
+                    </div>
+                  </div>
+                  <div class="user.content">
+                    <p class="content">Article's content</p>
+                  </div>
+                </div>
+              </li>
+            </div>
+
+            <div data-js="carousel__item" class="carousel__item">
+              <!-- <img src="/assets/2.jpg" /> -->
+              <li class="list-1"><img src="/assets/2.jpg" alt="">
+                <div class="main">
+                  <div class="user.title">
+                    <h1>Title</h1>
+                  </div>
+                  <div class="details">
+                    <img src="/assets/profile.jpg" alt="">
+                    <div class="detailsDate">
+                      <p class="user">Daniel Luiz Dourados</p>
+                      <p class="user">Xx/XX/XXXX</p>
+                    </div>
+                  </div>
+                  <div class="user.content">
+                    <p class="content">Article's content</p>
+                  </div>
+                </div>
+              </li>
+            </div>
+
+            <div class="carousel__actions">
+              <button data-js="carousel__button--prev" aria-label="Slide anterior">
+                < </button>
+
+                  <button data-js="carousel__button--next" aria-label="Próximo slide">
+                    >
+                  </button>
+            </div>
+
+
+            <!-- <li class="list-1"><img src="/assets/1.jpg" alt="">
+              <div class="main">
+                <div class="user.title">
+                  <h1>Title</h1>
+                </div>
+                <div class="details">
+                  <img src="/assets/profile.jpg" alt="">
+                  <div class="detailsDate">
+                    <p class="user">Daniel Luiz Dourados</p>
+                    <p class="user">Xx/XX/XXXX</p>
+                  </div>
+                </div>
+                <div class="user.content">
+                  <p class="content">Article's content</p>
                 </div>
               </div>
-              <div class="user.content">
-                <p class="content">Article's content</p>
+            </li> -->
+
+            <!-- <li class="list-2"><img src="/assets/2.jpg" alt="">
+              <div>
+                <h2>Very Soon</h2>
+                <p>Oops... Project in early stages.</p>
               </div>
-            </div>
-          </li>
-          <!-- <li class="list-2"><img src="/assets/2.jpg" alt="">
-            <div>
-              <h2>Very Soon</h2>
-              <p>Oops... Project in early stages.</p>
-            </div>
-          </li> -->
-          <!-- <li class="list-3"><img src="/assets/3.jpg" alt="">
-            <div>
-              <h2>Very Soon</h2>
-              <p>Oops... Project in early stages.</p>
-            </div>
-          </li> -->
-        </ul>
+            </li> -->
+            <!-- <li class="list-3"><img src="/assets/3.jpg" alt="">
+              <div>
+                <h2>Very Soon</h2>
+                <p>Oops... Project in early stages.</p>
+              </div>
+            </li> -->
+          </ul>
+        </div>
       </div>
-      <!-- <p class="copy">© 2022 Daniel Luiz</p> -->
+
     </div>
-    <script src="/mobile-navbar.js"></script>
+    <script src="/script.js"></script>
   </body>
 </div>
 <div class="footer">© 2022 Daniel Luiz</div>
