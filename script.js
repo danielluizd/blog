@@ -1,49 +1,31 @@
-const numbers = [50, 100, 50];
+const slides = document.querySelectorAll('[data-js="carousel__item"]');
+const nextButton = document.querySelector('[data-js="carousel__button--next"]');
+const prevButton = document.querySelector('[data-js="carousel__button--prev"]');
 
-const sum = (x, y, z) => x + y + z;
+let currentSlideIndex = 0;
 
-console.log(sum(numbers));
+nextButton.addEventListener("click", () => {
+  if (currentSlideIndex === slides.length - 1) {
+    currentSlideIndex = 0;
+  } else {
+    currentSlideIndex++;
+  }
 
-const randomNumber = Math.round(Math.random() * 100);
+  slides.forEach((slide) => {
+    slide.classList.remove("carousel__item--visible");
+  });
+  slides[currentSlideIndex].classList.add("carousel__item--visible");
+});
 
-const obj = {
-  a: 1,
-  b: 2,
-};
+prevButton.addEventListener("click", () => {
+  if (currentSlideIndex === 0) {
+    currentSlideIndex = slides.length - 1;
+  } else {
+    currentSlideIndex--;
+  }
 
-console.log(obj);
-
-const h = (w) => {
-  w.d = 3;
-};
-
-const q = (f) => {
-  h(f);
-};
-
-const i = (b) => {
-  q(b);
-};
-
-const v = { k: "t" };
-
-i(v);
-console.log(v);
-
-const timestamps = [
-  {
-    date: "3242348-9842340234",
-    value: 6,
-  },
-  {
-    date: "99e89-499958",
-    value: 31,
-  },
-  {
-    date: "8596646656666r488",
-    value: 17,
-  },
-];
-
-let accumulator = 0;
-const oddNumbers = [51, 97, 65, 23];
+  slides.forEach((slide) => {
+    slide.classList.remove("carousel__item--visible");
+  });
+  slides[currentSlideIndex].classList.add("carousel__item--visible");
+});

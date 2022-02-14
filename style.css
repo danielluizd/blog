@@ -169,7 +169,7 @@ li {
   width: 40px;
   height: 40px;
   color: #FFF;
-  background-color: #242424;
+  background-color: #606060;
 }
 
 .carousel .carousel__actions button[data-js="carousel__button--prev"] {
