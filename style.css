@@ -131,16 +131,31 @@ li {
   border-radius: 10px;
 }
 
+.article a{
+  text-decoration: none;
+  color: inherit;
+}
+
 .article h1 {
   font-weight: normal;
   margin-bottom: 0.5rem;
   font-size: 2.5rem;
 }
+
 .carousel {
+  display: grid;
+   /* grid-template-columns: 1fr 1fr 1fr;  */
   overflow: hidden;
-  max-width: 600px;
+  width: auto;
+  height: auto; 
   position: relative;
 }
+
+/* .carousel .carousel__item {
+  grid-column: 2/3;
+  align-items: center;
+  justify-items: center;
+}   */
 
 .carousel .carousel__item,
 .carousel .carousel__item--hidden {
@@ -157,7 +172,7 @@ li {
   width: 100%;
   justify-content: space-between;
   position: absolute;
-  top: 50%;
+  top: 60%;
   transform: translateY(-50%);
 }
 
@@ -168,7 +183,7 @@ li {
   cursor: pointer;
   width: 40px;
   height: 40px;
-  color: #FFF;
+  color: #fff;
   background-color: #606060;
 }
 
