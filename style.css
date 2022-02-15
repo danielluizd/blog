@@ -121,6 +121,7 @@ li {
   text-align: left;
   gap: 1rem;
   color: #606060;
+  margin-left: 4.5rem;
 }
 
 .article li + li {
@@ -131,7 +132,7 @@ li {
   border-radius: 10px;
 }
 
-.article a{
+.article a {
   text-decoration: none;
   color: inherit;
 }
@@ -144,18 +145,11 @@ li {
 
 .carousel {
   display: grid;
-   /* grid-template-columns: 1fr 1fr 1fr;  */
   overflow: hidden;
   width: auto;
-  height: auto; 
+  height: auto;
   position: relative;
 }
-
-/* .carousel .carousel__item {
-  grid-column: 2/3;
-  align-items: center;
-  justify-items: center;
-}   */
 
 .carousel .carousel__item,
 .carousel .carousel__item--hidden {
@@ -300,4 +294,41 @@ nav {
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
+}
+
+.articleHeader {
+  display: grid;
+}
+
+.articleHeader img {
+  place-self: center;
+  width: 50vw;
+  /* height: 100rem; */
+}
+
+.articleHeaderTop{
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #606060;
+}
+
+.articleDetails {
+  grid-row: 4/5;
+  margin-top: .5rem;
+  margin-bottom: 2rem;
+}
+
+.articleDetails a{
+  text-decoration: none;
+  color: #606060;
+}
+
+.articleTimeContainer{
+  color: #606060;
+}
+
+.articleContainer  p{
+  text-align: justify;
+  margin: 1rem;
+  line-height: 1.5rem;
 }
