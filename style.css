@@ -151,6 +151,10 @@ li {
   position: relative;
 }
 
+.carousel .carousel__item li a {
+  max-width: fit-content;
+}
+
 .carousel .carousel__item,
 .carousel .carousel__item--hidden {
   display: none;
@@ -161,10 +165,10 @@ li {
   animation: fadeVisibility 0.5s;
 }
 
-.carousel .carousel__item h1{
+.carousel .carousel__item h1 {
   text-overflow: ellipsis;
   overflow: hidden;
-font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .carousel .carousel__actions {
@@ -225,13 +229,14 @@ font-size: 1.5rem;
   display: flex;
   flex-direction: column;
 }
-.detailsDate p,a{
+
+.detailsDate p,
+a {
   font-size: 0.9rem;
 }
 
-.user {
+.user a {
   margin-bottom: 0.5rem;
-  font-size: 1rem;
 }
 
 .content {
