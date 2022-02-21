@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Personal Portfolio</title>
-  <link rel="icon" href="assets/coding.png">
+  <link rel="icon" href="/assets/coding.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
@@ -36,14 +36,14 @@
 
     <div class="container">
       <div id="profile" class="profile box1">
-        <img class="profile-pic" src="assets/profile.jpg" alt="profile picture">
+        <img class="profile-pic" src="/assets/profile.jpg" alt="profile picture">
         <h1 class="title">Daniel Luiz</h1>
         <span>Cuiabá, Brazil</span>
         <p>WEB DEVELOPER | FRONT END</p>
         <ul class="social-media">
-          <li><a href="https://www.linkedin.com/in/daniel-luiz-dourados/" target="_blank"><img src="assets/linkedin.svg" alt="LinkedIn"></a></li>
-          <li><a href="https://www.instagram.com/danielluizdourados/" target="_blank"><img src="assets/instagram.svg" alt="Instagram"></a></li>
-          <li><a href="https://twitter.com/DanLuizD" target="_blank"><img src="assets/twitter.svg" alt="Twitter"></a></li>
+          <li><a href="https://www.linkedin.com/in/daniel-luiz-dourados/" target="_blank"><img src="/assets/linkedin.svg" alt="LinkedIn"></a></li>
+          <li><a href="https://www.instagram.com/danielluizdourados/" target="_blank"><img src="/assets/instagram.svg" alt="Instagram"></a></li>
+          <li><a href="https://twitter.com/DanLuizD" target="_blank"><img src="/assets/twitter.svg" alt="Twitter"></a></li>
         </ul>
       </div>
 
@@ -55,11 +55,29 @@
       <div id="articles" class="article box1">
         <h1 class="title">Articles</h1>
 
+        <div class="accordionWrapper">
+          <div class="accordionItem visible">
+            <h2 class="accordionItemTitle">Title</h2>
+            <div class="accordionItemContent">
+              <p>hello</p>
+            </div>
+          </div>
+
+          <div class="accordionItem hidden">
+            <h2 class="accordionItemTitle">Title 2</h2>
+            <div class="accordionItemContent">
+              <p>hello</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- 
         <div class="carousel">
           <ul>
             <div data-js="carousel__item" class="carousel__item carousel__item--visible">
               <li class="list-1">
-                <a href="article1.html" target="_blank"><img src="assets/article1.jpg"></a>
+                <a href="article1.html" target="_blank"><img src="/assets/article1.jpg"></a>
                 <div class="main">
                   <div class="user.title">
                     <a href="article1.html" target="_blank">
@@ -67,7 +85,7 @@
                     </a>
                   </div>
                   <div class="details">
-                    <a href="https://github.com/danielluizd" target="_blank"><img src="assets/profile.jpg" alt=""></a>
+                    <a href="https://github.com/danielluizd" target="_blank"><img src="/assets/profile.jpg" alt=""></a>
                     <div class="detailsDate">
                       <a href="https://github.com/danielluizd" target="_blank">
                         <p class="user">Daniel Luiz Dourados</p>
@@ -81,7 +99,7 @@
 
             <div data-js="carousel__item" class="carousel__item">
               <a href="article2.html" target="_blank">
-                <li class="list-1"><img src="assets/article2.jpg" alt="">
+                <li class="list-1"><img src="/assets/article2.jpg" alt="">
               </a>
               <div class="main">
                 <div class="user.title">
@@ -90,7 +108,7 @@
                   </a>
                 </div>
                 <div class="details">
-                  <a href="https://github.com/danielluizd" target="_blank"><img src="assets/profile.jpg" alt=""></a>
+                  <a href="https://github.com/danielluizd" target="_blank"><img src="/assets/profile.jpg" alt=""></a>
                   <div class="detailsDate">
                     <a href="https://github.com/danielluizd" target="_blank">
                       <p class="user">Daniel Luiz Dourados</p>
@@ -105,7 +123,7 @@
 
             <div data-js="carousel__item" class="carousel__item">
               <a href="article3.html" target="_blank">
-                <li class="list-1"><img src="assets/article3.jpg" alt="">
+                <li class="list-1"><img src="/assets/article3.jpg" alt="">
               </a>
               <div class="main">
                 <div class="user.title">
@@ -114,7 +132,7 @@
                   </a>
                 </div>
                 <div class="details">
-                  <a href="https://github.com/danielluizd" target="_blank"><img src="assets/profile.jpg" alt=""></a>
+                  <a href="https://github.com/danielluizd" target="_blank"><img src="/assets/profile.jpg" alt=""></a>
                   <div class="detailsDate">
                     <a href="https://github.com/danielluizd" target="_blank">
                       <p class="user">Daniel Luiz Dourados</p>
@@ -128,7 +146,7 @@
 
             <div data-js="carousel__item" class="carousel__item">
               <a href="article4.html" target="_blank">
-                <li class="list-1"><img src="assets/article4.jpg" alt="">
+                <li class="list-1"><img src="/assets/article4.jpg" alt="">
               </a>
               <div class="main">
                 <div class="user.title">
@@ -137,7 +155,7 @@
                   </a>
                 </div>
                 <div class="details">
-                  <a href="https://github.com/danielluizd" target="_blank"><img src="assets/profile.jpg" alt=""></a>
+                  <a href="https://github.com/danielluizd" target="_blank"><img src="/assets/profile.jpg" alt=""></a>
                   <div class="detailsDate">
                     <a href="https://github.com/danielluizd" target="_blank">
                       <p class="user">Daniel Luiz Dourados</p>
@@ -152,7 +170,7 @@
 
             <div data-js="carousel__item" class="carousel__item">
               <a href="article5.html" target="_blank">
-                <li class="list-1"><img src="assets/article5.jpg" alt="">
+                <li class="list-1"><img src="/assets/article5.jpg" alt="">
               </a>
               <div class="main">
                 <div class="user.title">
@@ -161,7 +179,7 @@
                   </a>
                 </div>
                 <div class="details">
-                  <a href="https://github.com/danielluizd" target="_blank"><img src="assets/profile.jpg" alt=""></a>
+                  <a href="https://github.com/danielluizd" target="_blank"><img src="/assets/profile.jpg" alt=""></a>
                   <div class="detailsDate">
                     <a href="https://github.com/danielluizd" target="_blank">
                       <p class="user">Daniel Luiz Dourados</p>
@@ -185,10 +203,10 @@
 
           </ul>
         </div>
-      </div>
+      </div> -->
 
-    </div>
-    <script src="script.js"></script>
+      </div>
+      <script src="script.js"></script>
   </body>
 </div>
 <div class="footer">© 2022 Daniel Luiz</div>
