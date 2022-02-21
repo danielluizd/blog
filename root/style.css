@@ -143,62 +143,6 @@ li {
   font-size: 2.5rem;
 }
 
-.carousel {
-  display: grid;
-  overflow: hidden;
-  width: auto;
-  height: auto;
-  position: relative;
-}
-
-.carousel .carousel__item li a {
-  max-width: fit-content;
-}
-
-.carousel .carousel__item,
-.carousel .carousel__item--hidden {
-  display: none;
-}
-
-.carousel .carousel__item--visible {
-  display: block;
-  animation: fadeVisibility 0.5s;
-}
-
-.carousel .carousel__item h1 {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  font-size: 1.5rem;
-}
-
-.carousel .carousel__actions {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  position: absolute;
-  top: 60%;
-  transform: translateY(-50%);
-}
-
-.carousel .carousel__actions button {
-  border-radius: 50px;
-  border: 0;
-  font-weight: bold;
-  cursor: pointer;
-  width: 40px;
-  height: 40px;
-  color: #fff;
-  background-color: #606060;
-}
-
-.carousel .carousel__actions button[data-js="carousel__button--prev"] {
-  margin-left: 20px;
-}
-
-.carousel .carousel__actions button[data-js="carousel__button--next"] {
-  margin-right: 20px;
-}
-
 @keyframes fadeVisibility {
   0% {
     opacity: 0;
@@ -349,11 +293,10 @@ nav {
 }
 
 .accordionItem {
-  float: left;
   display: block;
   width: 100%;
   box-sizing: border-box;
-  font-family: "Open-sans", Arial, sans-serif;
+  font-family: "Source Code Pro", monospace;
 }
 
 .accordionItemTitle {
@@ -376,14 +319,13 @@ nav {
   -o-transform: scaleY(0);
   -ms-transform: scaleY(0);
   transform: scaleY(0);
-  float: left;
   display: block;
 }
 
 .visible .accordionItemContent {
   padding: 20px;
-  background-color: #fff;
-  border: 1px solid #ddd;
+  /* background-color: #fff; */
+  /* border: 1px solid #ddd; */
   width: 100%;
   margin: 0px 0px 10px 0px;
   display: block;
@@ -395,7 +337,6 @@ nav {
   -o-transform-origin: top;
   -ms-transform-origin: top;
   transform-origin: top;
-
   -webkit-transition: -webkit-transform 0.4s ease-out;
   -o-transition: -o-transform 0.4s ease;
   -ms-transition: -ms-transform 0.4s ease;
@@ -417,6 +358,6 @@ nav {
   -moz-border-radius-bottomleft: 0px;
   border-bottom-right-radius: 0px;
   border-bottom-left-radius: 0px;
-  background-color: #505050;
+  background-color: #404040;
   color: #eee;
 }
