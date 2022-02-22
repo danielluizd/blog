@@ -14,7 +14,7 @@ img {
 
 body {
   font-family: "Source Code Pro", monospace;
-  background: url("/assets/background.jpg") no-repeat fixed top center;
+  background: url("assets/background.jpg") no-repeat fixed top center;
   background-size: cover;
   display: grid;
   align-items: center;
