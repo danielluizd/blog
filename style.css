@@ -1,3 +1,14 @@
+@import "general";
+@import "about";
+@import "article";
+@import "articles-structure";
+@import "box";
+@import "mobile";
+@import "texts";
+@import "effects";
+@import "details";
+@import "index";
+
 * {
   margin: 0;
   padding: 0;

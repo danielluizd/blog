@@ -1,3 +1,18 @@
+@import "_about.sass"
+@import "_article.sass"
+@import "_articles-structure.sass"
+@import "_box.sass"
+@import "_details.sass"
+@import "_effects.sass"
+@import "_mobile.sass"
+@import "_profile.sass"
+@import "_texts.sass"
+
+$base-color: #aeaeae
+
+$secundary-color: #eee
+
+
 *
   margin: 0
   padding: 0
@@ -14,7 +29,7 @@ body
   align-items: center
   justify-items: center
   height: 100vh
-  color: #aeaeae
+  color: $base-color
   scroll-behavior: smooth
   overflow-x: hidden
 
@@ -49,10 +64,9 @@ nav
   width: 100vw
   height: 6vh
 
-  .container {
-  padding: 0 16px;
-}
+.container 
+  padding: 0 16px
 
-.back-image {
-  backdrop-filter: blur(2px);
-}
+
+.back-image 
+  backdrop-filter: blur(2px)
